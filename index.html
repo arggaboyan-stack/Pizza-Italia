@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Italia — Кафе в Абовяне</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        .container {
+            background-color: #1e1e22;
+            border: 1px solid #2e2e34;
+            border-radius: 20px;
+            max-width: 520px;
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+        }
+        .header-banner {
+            background: linear-gradient(90deg, #008C45 0%, #008C45 33.3%, #F4F5F0 33.3%, #F4F5F0 66.6%, #CD212A 66.6%, #CD212A 100%);
+            height: 8px;
+            width: 100%;
+        }
+        .content {
+            padding: 28px;
+        }
+        .title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        .rating {
+            background-color: #2a2a30;
+            padding: 6px 12px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #fbbf24;
+            white-space: nowrap;
+        }
+        .subtitle {
+            color: #9ca3af;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .info-box {
+            background-color: #26262b;
+            padding: 14px;
+            border-radius: 14px;
+        }
+        .info-label {
+            font-size: 12px;
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .info-value {
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .section {
+            background-color: #26262b;
+            padding: 18px;
+            border-radius: 14px;
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            background-color: #323238;
+            color: #e5e7eb;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .features-list {
+            list-style: none;
+            font-size: 14px;
+            color: #d1d5db;
+        }
+        .features-list li {
+            margin-bottom: 6px;
+            padding-left: 16px;
+            position: relative;
+        }
+        .features-list li::before {
+            content: "•";
+            color: #22c55e;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .review-card {
+            background-color: #26262b;
+            border-left: 3px solid #fbbf24;
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            font-size: 14px;
+            color: #d1d5db;
+        }
+        .review-author {
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 6px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 16px;
+            border-radius: 14px;
+            transition: opacity 0.2s;
+            margin-bottom: 12px;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .btn-call {
+            background-color: #16a34a;
+            color: #ffffff;
+        }
+        .btn-map {
+            background-color: #2e2e34;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-banner"></div>
+        <div class="content">
+            
+            <div class="title-row">
+                <h1>Pizza Italia</h1>
+                <div class="rating">★ 5.0 (5 оценок)</div>
+            </div>
+            <p class="subtitle">Кафе • Итальянская и азиатская кухня</p>
+
+            <!-- Адрес и время работы -->
+            <div class="info-grid">
+                <div class="info-box">
+                    <div class="info-label">Адрес</div>
+                    <div class="info-value">ул. Атиса, 1/4, Абовян</div>
+                </div>
+                <div class="info-box">
+                    <div class="info-label">График и чек</div>
+                    <div class="info-value">До 23:00 • ~4 000 ֏</div>
+                </div>
+            </div>
+
+            <!-- Меню -->
+            <div class="section">
+                <h2>В меню</h2>
+                <div class="tags">
+                    <span class="tag">Пицца</span>
+                    <span class="tag">Бургеры</span>
+                    <span class="tag">Паста</span>
+                    <span class="tag">Стейки</span>
+                    <span class="tag">Салаты</span>
+                    <span class="tag">Сэндвичи</span>
+                    <span class="tag">Супы</span>
+                    <span class="tag">Крылышки</span>
+                </div>
+            </div>
+
+            <!-- Подробности о заведении -->
+            <div class="section">
+                <h2>Подробности</h2>
+                <ul class="features-list">
+                    <li>Итальянская и азиатская кухня</li>
+                    <li>Есть завтраки и постное меню</li>
+                    <li>Зал до 35 посадочных мест</li>
+                    <li>Красиво оформленная летняя веранда</li>
+                    <li>Демократичные цены — можно как перекусить, так и плотно поесть</li>
+                </ul>
+            </div>
+
+            <!-- Отзыв посетителя -->
+            <div class="review-card">
+                <div class="review-author">
+                    <span>Sofia Sergeevna</span>
+                    <span style="color: #fbbf24;">★★★★★</span>
+                </div>
+                <p>«Комфортное расположение ресторана. Очень вкусные блюда по демократичной цене. Приветливый персонал, а еще была очень красиво оформлена веранда».</p>
+            </div>
+
+            <!-- Кнопки действий -->
+            <!-- ЗАМЕНИ НОМЕР ТЕЛЕФОНА НИЖЕ -->
+            <a href="tel:+37433575750" class="btn btn-call">Позвонить: +374 (00) 00-00-00</a>
+            
+            <a href="https://2gis.am/search/Абовян,%20улица%20Атиса,%201/4" target="_blank" class="btn btn-map">Открыть адрес на карте</a>
+
+        </div>
+    </div>
+
+</body>
+</html>
